@@ -4,19 +4,14 @@
     "module": "commonjs",
     "sourceMap": true,
     "outDir": "lib",
-    "rootDir": "src",
-    "removeComments": true,
+    "rootDir": ".",
     "strict": true,
     "moduleResolution": "node",
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "types": ["node", "jest"]
+    "lib": [
+      "ES2019"
+    ]
   },
-  "include": [
-    "src/**/*.ts"
-  ],
   "exclude": [
-    "node_modules",
-    "test/**/*.specs.ts"
+    "node_modules"
   ]
 }

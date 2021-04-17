@@ -1,17 +1,17 @@
-const { greeter } = require('../src/index')
+const { greeter } = require('../lib/index')
 
-describe('Greeter', () => {
+describe('Greeter Should', () => {
 
-	test('should greet to World', () => {
+	it('greet to World when name is not passed', () => {
 
 		const actual = greeter()
 		expect(actual).toEqual('Hello World!!')
 	})
 
-	test.each([
+	it.each([
 		['Alice', 'Hello Alice!!'],
 		['Bob', 'Hello Bob!!']
-	])('should greet to %s', (name, expected) => {
+	])('greet to %s when name is passed', (name, expected) => {
 
 		const actual = greeter(name)
 		expect(actual).toEqual(expected)

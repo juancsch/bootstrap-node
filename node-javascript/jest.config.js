@@ -3,5 +3,5 @@ module.exports = {
     coverageDirectory: 'coverage',
 	testEnvironment: 'node',
 	moduleFileExtensions: ['js'],
-	testMatch: ['**/*.test.js']
+	testMatch: ['test/**/*.spec.js']
 }

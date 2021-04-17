@@ -1,0 +1,22 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "extends": [
+    "standard-with-typescript",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "rules": {
+    "no-tabs": ["error", { "allowIndentationTabs": true }],
+    "padded-blocks": "off",
+    "@typescript-eslint/semi": ["error", "never"],
+    "@typescript-eslint/indent": ["error", "tab"],
+    "@typescript-eslint/method-signature-style": ["error", "method"]
+  }
+}
