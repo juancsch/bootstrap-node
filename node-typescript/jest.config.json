@@ -5,5 +5,9 @@
 	"verbose": true,
 	"coveragePathIgnorePatterns": ["<rootDir>/test", "<rootDir>/node_modules"],
 	"testMatch": ["<rootDir>/test/**/*.spec.ts"],
-	"testEnvironment": "node"
+	"testEnvironment": "node",
+  "reporters": [
+		"default",
+		[ "jest-summary-reporter", { "failuresOnly": true }]
+	]
 }

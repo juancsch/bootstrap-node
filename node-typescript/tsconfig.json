@@ -8,7 +8,7 @@
     "strict": true,
     "moduleResolution": "node",
     "lib": [
-      "ES2019"
+      "ES2020"
     ]
   },
   "exclude": [

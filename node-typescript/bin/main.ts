@@ -1,3 +1,7 @@
 #!/usr/bin/env ts-node
 
-console.log('Hello world!!')
+import { greeter } from '../src/index'
+
+console.log(
+	greeter(process.argv[2])
+)

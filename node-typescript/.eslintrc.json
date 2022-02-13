@@ -15,7 +15,6 @@
   "rules": {
     "no-tabs": ["error", { "allowIndentationTabs": true }],
     "padded-blocks": "off",
-    "@typescript-eslint/semi": ["error", "never"],
     "@typescript-eslint/indent": ["error", "tab"],
     "@typescript-eslint/method-signature-style": ["error", "method"]
   }

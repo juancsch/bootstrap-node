@@ -1,8 +1,8 @@
 /**
- * Greeting
+ * Greeter
  *
  * @param {string} name
- * @return {string}
+ * @returns {string}
  */
 exports.greeter = function (name = 'World') {
 	return `Hello ${name}!!`
