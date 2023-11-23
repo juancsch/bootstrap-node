@@ -1,0 +1,33 @@
+{
+  "name": "bootstrap-javascript-esm",
+  "version": "0.0.1",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "bin": {
+    "greeting": "bin/main"
+  },
+  "main": "src/index.js",
+  "files": [
+    "bin",
+    "src"
+  ],
+	"type": "module",
+  "scripts": {
+    "lint": "eslint lib test bin",
+    "lint:fix": "npm run lint -- --fix",
+    "test": "vitest run",
+    "tdd": "vitest watch"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^20.9.4",
+    "eslint": "^8.54.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-jsdoc": "^46.9.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "vitest": "^0.34.6"
+  }
+}
