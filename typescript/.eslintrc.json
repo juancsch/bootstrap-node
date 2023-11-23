@@ -1,19 +1,23 @@
 {
-    "extends": [
-        "eslint:recommended",
-        "plugin:@typescript-eslint/recommended",
-        "standard-with-typescript"
-    ],
-    "parser": "@typescript-eslint/parser",
-    "parserOptions": {
-        "project": "./tsconfig.json",
-        "ecmaVersion": "latest"
-    },
-    "plugins": [
-        "@typescript-eslint"
-    ],
-    "rules": {
-      "no-tabs": "off",
-      "@typescript-eslint/indent": ["error", "tab"]
-    }
+  "env": {
+    "node": true,
+    "jest": true
+  },
+  "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/recommended",
+      "standard-with-typescript"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+      "project": "./tsconfig.json",
+      "ecmaVersion": "latest"
+  },
+  "plugins": [
+      "@typescript-eslint"
+  ],
+  "rules": {
+    "no-tabs": "off",
+    "@typescript-eslint/indent": ["error", "tab"]
+  }
 }

@@ -5,7 +5,7 @@
 This is a repository intended to serve as a starting point if you want to bootstrap a Node projects with;
 
 - ESLINT with StandarJS and Typescript plugins
-- jest testing library
+- jest and vitest testing library
 
 Setup environment:
 

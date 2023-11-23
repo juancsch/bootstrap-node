@@ -8,8 +8,9 @@
   "scripts": {
     "lint": "eslint lib test bin",
     "lint:fix": "npm run lint -- --fix",
-    "test": "jest",
-    "test:tdd": "jest --watch"
+    "test": "npm run test:j",
+    "test:j": "jest",
+    "test:v": "vitest run"
   },
   "devDependencies": {
     "@types/jest": "^29.5.10",
@@ -23,6 +24,7 @@
     "jest-extended": "^4.0.2",
     "jest-summary-reporter": "0.0.2",
     "ts-node": "10.9.1",
-    "typescript": "^5.3.2"
+    "typescript": "^5.3.2",
+    "vitest": "^0.34.6"
   }
 }
