@@ -1,0 +1,9 @@
+{
+	"testEnvironment": "node",
+	"testMatch": ["<rootDir>/test/**/*.test.js"],
+	"verbose": true,
+  "reporters": [
+		"default",
+		[ "jest-summary-reporter", { "failuresOnly": true }]
+	]
+}
