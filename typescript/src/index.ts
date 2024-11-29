@@ -1,4 +1,3 @@
-
-export function greeter (name = 'World'): string {
+export function greeter (name = 'World') {
 	return `Hello ${name}!!`
 }

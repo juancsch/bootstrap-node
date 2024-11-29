@@ -7,7 +7,7 @@
   "bin": {
     "greeting": "bin/main"
   },
-  "main": "src/index.js",
+  "exports": "./src/index.js",
   "type": "module",
   "files": [
     "bin",

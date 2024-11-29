@@ -5,26 +5,36 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bin": {
+    "greeting": "bin/main"
+  },
+  "exports": "./lib/index.js",
+  "type": "module",
+  "files": [
+    "bin",
+    "lib"
+  ],
   "scripts": {
-    "lint": "eslint lib test bin",
+    "lint": "eslint src test",
     "lint:fix": "npm run lint -- --fix",
-    "test": "npm run test:j",
-    "test:j": "jest",
-    "test:v": "vitest run"
+    "test": "npm run test:jest",
+    "test:vitest": "vitest run",
+    "test:jest": "jest"
   },
   "devDependencies": {
+    "@stylistic/eslint-plugin": "^2.11.0",
+    "@swc/core": "^1.7.36",
+    "@swc/jest": "^0.2.36",
     "@types/jest": "^29.5.10",
-    "@types/node": "^20.9.4",
-    "@typescript-eslint/eslint-plugin": "^6.12.0",
-    "@typescript-eslint/parser": "^6.12.0",
-    "eslint": "^8.54.0",
-    "eslint-config-standard-with-typescript": "^40.0.0",
+    "@types/node": "^22.10.0",
+    "eslint": "^9.15.0",
+    "globals": "^15.12.0",
     "jest": "^29.7.0",
-    "ts-jest": "^29.1.1",
     "jest-extended": "^4.0.2",
-    "jest-summary-reporter": "0.0.2",
-    "ts-node": "10.9.1",
-    "typescript": "^5.3.2",
-    "vitest": "^0.34.6"
+    "jest-summary-reporter": "^0.0.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3",
+    "typescript-eslint": "^8.16.0",
+    "vitest": "^2.1.6"
   }
 }
