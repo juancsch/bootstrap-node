@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { greeter } from '../src/index.js'
+const { greeter } = require('../src/index')
 
 console.log(
 	// eslint-disable-next-line no-magic-numbers

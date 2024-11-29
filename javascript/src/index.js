@@ -3,6 +3,6 @@
  * @param {string} name
  * @returns {string}
  */
-exports.greeter = function (name = 'World') {
+export function greeter (name = 'World') {
 	return `Hello ${name}!!`
 }
