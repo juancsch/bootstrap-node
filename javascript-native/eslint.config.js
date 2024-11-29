@@ -13,19 +13,7 @@ export default [
 	}), {
 		languageOptions: {
 			ecmaVersion: 2022,
-			sourceType: 'module',
-			globals: {
-				// ...globals.node
-				__dirname: 'readonly',
-				Buffer: 'readonly',
-				require: 'readonly',
-				module: 'readonly',
-				exports: 'readonly',
-				process: 'readonly',
-				console: 'readonly',
-				fetch: 'readonly',
-				TextDecoder: 'readonly'
-			}
+			sourceType: 'module'
 		},
 		rules: {
 			'@stylistic/padded-blocks': 'off',

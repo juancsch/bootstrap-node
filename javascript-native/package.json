@@ -8,21 +8,20 @@
     "greeting": "bin/main"
   },
   "main": "src/index.js",
-	"type": "module",
+  "type": "module",
   "files": [
     "bin",
     "src"
   ],
   "scripts": {
-    "lint": "eslint lib test bin",
+    "lint": "eslint src test bin",
     "lint:fix": "npm run lint -- --fix",
     "test": "node --test",
     "tdd": "node --test --watch"
   },
-  "dependencies": {},
   "devDependencies": {
-    "@types/node": "^22.9.3",
     "@stylistic/eslint-plugin": "^2.11.0",
+    "@types/node": "^22.9.3",
     "eslint": "^9.15.0"
   }
 }

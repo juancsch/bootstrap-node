@@ -1,5 +1,3 @@
-import assert from 'node:assert'
-
 import { greeter } from '../src/index.js'
 
 describe('Greeter Should', () => {
@@ -7,18 +5,15 @@ describe('Greeter Should', () => {
 	it('greet to World when name is not passed', () => {
 
 		const actual = greeter()
-		assert(actual, 'Hello World!!')
+		expect(actual).toEqual('Hello World!!')
 	})
 
-	const parametrized = [
+	it.each([
 		['Alice', 'Hello Alice!!'],
 		['Bob', 'Hello Bob!!']
-	]
-	parametrized.forEach(([name, expected]) => {
-		it('greet to %s when name is passed', () => {
+	])('greet to %s when name is passed', (name, expected) => {
 
-			const actual = greeter(name)
-			assert(actual, expected)
-		})
+		const actual = greeter(name)
+		expect(actual).toEqual(expected)
 	})
 })
