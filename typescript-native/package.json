@@ -1,0 +1,31 @@
+{
+  "name": "bootstrap-testing",
+  "version": "0.0.1",
+  "description": "## Settings",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bin": {
+    "greeting": "bin/main"
+  },
+  "exports": "./lib/index.js",
+  "type": "module",
+  "files": [
+    "bin",
+    "lib"
+  ],
+  "scripts": {
+    "lint": "eslint src test",
+    "lint:fix": "npm run lint -- --fix",
+    "test": "node --import tsx/esm --test",
+    "tdd": "node --import tsx/esm --test --watch"
+  },
+  "devDependencies": {
+    "@stylistic/eslint-plugin": "^2.11.0",
+    "@types/node": "^22.10.0",
+    "eslint": "^9.15.0",
+    "tsx": "4.19.1",
+    "typescript": "^5.6.3",
+    "typescript-eslint": "^8.16.0"
+  }
+}

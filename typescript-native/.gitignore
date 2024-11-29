@@ -1,0 +1,7 @@
+.idea
+.vscode
+
+*-lock.*
+node_modules/
+
+build
