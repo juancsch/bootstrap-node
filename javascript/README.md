@@ -4,24 +4,26 @@
 
 This is a repository intended to serve as a starting point if you want to bootstrap a Node projects with;
 
-- ESLINT with StandarJS and JSDOC plugins
+- ESLINT and JSDOC plugins
 - jest testing library
+- vitest testing library
 
 Setup environment:
 
-```
-npm install
+```bash
+pnpm install
 ```
 
 Testing:
 
-```
-npm test
+```bash
+npm run test:jest
+npm run test:vitest
 ```
 
 Tools:
 
-```
+```bash
 docker build . -t greeting-node
 docker run greeting-node <name>
 ```
