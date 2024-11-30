@@ -19,7 +19,7 @@
     "lint:fix": "npm run lint -- --fix",
     "test": "npm run test:jest",
     "test:vitest": "vitest run",
-    "test:jest": "jest"
+    "test:jest": "NODE_OPTIONS=--experimental-vm-modules jest"
   },
   "devDependencies": {
     "@stylistic/eslint-plugin": "^2.11.0",

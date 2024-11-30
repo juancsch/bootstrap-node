@@ -16,8 +16,8 @@
   "scripts": {
     "lint": "eslint src test bin",
     "lint:fix": "npm run lint -- --fix",
-    "test": "node --test",
-    "tdd": "node --test --watch"
+    "test": "node --test test/**/*.test.js",
+    "tdd": "node --test --watch test/**/*.test.js"
   },
   "devDependencies": {
     "@stylistic/eslint-plugin": "^2.11.0",

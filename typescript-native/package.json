@@ -17,8 +17,8 @@
   "scripts": {
     "lint": "eslint src test",
     "lint:fix": "npm run lint -- --fix",
-    "test": "node --import tsx/esm --test",
-    "tdd": "node --import tsx/esm --test --watch"
+    "test": "node --import tsx/esm --test test/**/*.test.ts",
+    "tdd": "node --import tsx/esm --test --watch test/**/*.test.ts"
   },
   "devDependencies": {
     "@stylistic/eslint-plugin": "^2.11.0",
